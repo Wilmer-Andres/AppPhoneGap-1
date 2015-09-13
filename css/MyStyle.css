@@ -1,6 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
+#mapa{
+	margin:auto;
+	max-width:393px;
+	width:100%;
+}
+
 *[data-role="footer"] div{
 	background-color:#ccc
 	height:100px;
