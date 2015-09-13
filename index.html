@@ -18,7 +18,7 @@
     
         <div role="main" class="ui-content">
         	<div data-form="ui-body-a">
-	            contenido de 
+	            <q>Lugar del mapa</q>
             </div>
             <ul data-role="listview" data-inset="true">
                 <li><a href="#dos" title="vista dos">Vista número dos</a></li>
@@ -38,39 +38,49 @@
 	<!-- Segunda vista-->
 <div data-role="page" id="dos">
         <div data-role="header" data-position="fixed">
-            <h1>Tercera vista</h1> 
+            <h1>Segunda vista</h1> 
             <a href="#nav-menu" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
         </div>
     
         <div role="main" class="ui-content">
            	<p>
-            	Contenido de la tercera vista
+            	Contenido de la segunda vista. Con menu lateral.
             </p>
         </div>
         
         
-        <div id="nav-menu" data-role="panel" data-theme="b" data-display="overlay" >
+      <div id="nav-menu" data-role="panel" data-theme="b" data-display="overlay" >
         <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
    		<ul data-role="listview" data-inset="true">
-        	<li><a href="#dos" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Vista número dos</a></li>
-            <li><a href="#tres" title="vista tres">Vista número tres</a></li>
-            <li><a href="#cuatro" title="vista cuatro">Vista número cuadro</a></li>
-            <li><a href="#cinco" title="vista cinco">Vista número cinco</a></li>
+        	<li><a href="#uno">Inicio</a></li>
+            <li><a href="#tres">Vista número tres</a></li>
+            <li><a href="#cuatro">Vista número cuadro</a></li>
+            <li><a href="#cinco">Vista número cinco</a></li>
       	</ul>
-  </div>	
+	  </div>	
     </div>
     
     <!-- Tercera vista-->
     <div data-role="page" id="tres">
         <div data-role="header" data-position="fixed">
             <h1>Tercera vista</h1>
+			<a href="#nav-menu2" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
         </div>
     
         <div role="main" class="ui-content">
            	<p>
-            	Contenido de la tercera vista
+            	Contenido de la tercera vista. Con menu lateral.
             </p>
         </div>
+		<div id="nav-menu2" data-role="panel" data-theme="b" data-display="overlay" >
+            <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#uno">Inicio</a></li>
+                <li><a href="#dos">Vista número dos</a></li>
+                <li><a href="#cuatro">Vista número cuadro</a></li>
+                <li><a href="#cinco">Vista número cinco</a></li>
+            </ul>
+		</div>
     </div>
     
     
@@ -79,25 +89,44 @@
     
         <div data-role="header" data-position="fixed">
             <h1>Cuarta Vista</h1>
+            <a href="#nav-menu3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
         </div>
         <div role="main" class="ui-content">
         	<p>
-            	Contenido de la cuarta vista
+            	Contenido de la cuarta vista. Con menu lateral.
             </p>
         </div>
+       	<div id="nav-menu3" data-role="panel" data-theme="b" data-display="overlay" >
+        	<a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#uno">Inicio</a></li>
+                <li><a href="#dos">Vista número dos</a></li>
+                <li><a href="#tres">Vista número tres</a></li>
+                <li><a href="#cinco">Vista número cinco</a></li>
+            </ul>
+    	</div>
     </div>
     
         <!-- Quinta Vista-->
     <div data-role="page" id="cinco">
         <div data-role="header" data-position="fixed">
             <h1>Quinta Vista</h1>
+            <a href="#nav-menu4" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
         </div>
         <div role="main" class="ui-content">
         	<p>
-            	Contenido de la quinta vista
+            	Contenido de la quinta vista. Con menu lateral
             </p>
-        </div>    
+        </div>
+      	<div id="nav-menu4" data-role="panel" data-theme="b" data-display="overlay" >
+        	<a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#uno">Inicio</a></li>
+                <li><a href="#dos">Vista número dos</a></li>
+                <li><a href="#tres">Vista número tres</a></li>
+                <li><a href="#cuatro">Vista número cuatro</a></li>
+            </ul>
+    	</div>
     </div>
-
-</body>
+	</body>
 </html>
