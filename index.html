@@ -1,682 +1,103 @@
-﻿<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi; charset=UTF-8">-->
-    <meta name="viewport" content="initial-scale=1, width=device-width, height=device-height; charset=UTF-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <title>FusaDigital</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App Hybrid</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
 
-    <!-- FusaDigital references -->
-    <link href="css/index.css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
-    <link href="css/jquery.mobile-1.4.3.min.css" rel="stylesheet" />
-
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery.mobile-1.4.3.min.js"></script>
-    <script src="scripts/MyScript.js"></script>
-
-</head>
 <body>
-    <div>
-        <!--Index
-        ********************************************** -->
-        <div data-role="page" id="principal" class="next-gobierno">
-            <header data-role="header" data-fullscreen="true">
-                <span class="ui-title">&nbsp;</span>
-            </header>
-            <section role="main" class="ui-content">
-                <img src="images/LogoSimbolo.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-index">
-                <nav id="main">
-                    <ul role="navigation">
-                        <li><a href="#gobierno-en-linea" data-transition="slide">Gobierno en Línea</a></li>
-                        <li><a href="#educacion" data-transition="slide">Educación Digital</a></li>
-                        <li><a href="#economico" data-transition="slide">Desarrollo Económico Digital</a></li>
-                        <li><a href="#turismo" data-transition="slide">Turismo y Cultura Digital</a></li>
-                    </ul>
-                </nav>
-                <br>
-                <p>
-                    <img src="images/LogoSimboloF.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-index" style="margin:15px auto;">
-                </p>
-                <p>
-                    <a class="twitter-timeline link" href="https://twitter.com/FusaDigital" target="_blank"><span class="sprite-comunications sprite-twitter sprite-icon"></span> Que estas pensando?</a>
-                </p>
-                <p>
-                    <a class="limpiar link" href="http://fusagasugadigital.gov.co/" target="_blank"><span class="sprite-comunications sprite-link-out sprite-icon"></span> Ir al portal Web Fusagasugá Digital</a>
-                </p>
-            </section>
+    <!-- Primera vista -->
+    <div data-role="page" id="uno">
+        <div data-role="header">
+            <h1>Fusagasugá</h1>
         </div>
-
-
-        <!--Gobierno En Línea
-        ********************************************** -->
-        <div data-role="page" id="gobierno-en-linea">
-            <header data-role="header" data-fullscreen="true" class="ui-bar-inherit-personal" id="header-gobierno">
-                <a href="#principal" data-transition="flip" id="logoSimbolo" data-role="none">
-                    <img src="images/LogoSimbolo.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-top">
-                </a>
-
-                <a href="#nav-gobierno" class="ui-btn-right ui-link ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menú</a>
-                <div data-role="panel" id="nav-gobierno" data-position="right" data-display="overlay" class="menu-content">
-                    <div class="ui-grid-solo">
-                        <div class="ui-block-a"><a href="#principal"> <img src="images/btn/btn-home.png" /><br /> <small>Inicio</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#gobierno-en-linea"> <img src="images/btn/btn-gel.png" /><br /> <small>Gobierno en Línea</small></a></div>
-                        <div class="ui-block-b"><a href="#educacion"> <img src="images/btn/btn-educacion.png" /><br /> <small>Educación Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#economico"> <img src="images/btn/btn-economico.png" /><br /><small>Desarrollo Económico</small></a></div>
-                        <div class="ui-block-b"><a href="#turismo"> <img src="images/btn/btn-turismo.png" /><br /><small>Turismo y Cultura Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#creditos"> <img src="images/btn/btn-creditos.png" /><br /><small>Creditos</small></a></div>
-                        <div class="ui-block-b"><a href="#header-gobierno" data-rel="close"> <img src="images/btn/btn-close.png" /><br /><small>Cerrar</small></a></div>
-                    </div>
-                </div>
-            </header>
-            <section role="main" class="ui-content">
-                <div class="title">
-                    <a href="#principal" class="sprite-primary sprite-prev" data-rel="back"></a>
-                    <span>
-                        <img src="images/btn/btn-gel.png" alt="G.E.L.">
-                        Gobierno En Línea
-                    </span>
-                    <a href="#educacion" class="sprite-primary sprite-next" data-transition="slide"></a>
-                </div>
-                <hr>
-                <!--<div class="right prev-principal"></div>
-                <div class="left next-educacion"></div>-->
-                <div class="video">
-                    <div class="link-video">
-                        <a href="https://www.youtube.com/embed/jzc8EK2e5yw?enablejsapi=1&origin">
-                            <div class="play"></div>
-                            <img src="images/gel.jpg" />
-                        </a>
-                    </div>
-                    <div class="descripcion">
-                        <h4 class="descripcion-titulo">¿Que es G.E.L.?</h4>
-                        <small>Quieres saber que es Gobierno en Línea (G.E.L.) y como nos ayuda?? mira el video de la izquierda </small>
-                    </div>
-                </div>
-                <div id="st-accordion" class="st-accordion">
-                    <ul class="menu">
-                        <li>
-                            <a href="#"><i class="sprite-comunications sprite-add"></i>Ecosistema digital</a>
-                            <div class="st-content">
-                                <p>
-                                    Mediante la implementación de estos lineamientos de política, cuyo objeto es impulsar la
-                                    masificación y uso de internet a través del desarrollo y uso eficiente de infraestructura y la
-                                    promoción y apropiación de los servicios TIC, el cual desarrollará un Ecosistema Digital
-                                    (infraestructura, servicios, aplicaciones y usuarios) para la inclusión social y la disminución
-                                    de la brecha digital, así como para la innovación, la productividad y la competitividad.
-                                </p>
-                                <dl>
-                                    <dt><b>Infraestructura</b></dt>
-                                    <dd>Provee conectividad digital. (despliegue de redes)</dd>
-                                    <dt><b>Servicios</b></dt>
-                                    <dd>Permite el desarrollo de la conectividad digital.(masificación de terminales)</dd>
-                                    <dt><b>Usuarios</b></dt>
-                                    <dd>Apropieación de la tecnología y creación de contenidos.</dd>
-                                    <dt><b>Aplicaciones</b></dt>
-                                    <dd>Promover contenidos y aplicaciones digitales.</dd>
-                                </dl>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><i class="sprite-comunications sprite-add"></i>Zonas WI-FI</a>
-                            <div class="st-content">
-                                <p>
-                                    Con las "Zonas Wi-Fi", se busca promover el uso y la masificación de las TIC en las
-                                    plazas de mercado, parques principales, terminales de transporte y sitios turísticos de las region.
-                                </p>
-                                <p>
-                                    Se espera que los mayores beneficiados sean los transeúntes, vendedores ambulantes, estudiantes y
-                                    el público general que aún no ha accedido a la experiencia del internet WiFi.<br />
-                                    Los puntos actuales cuentan con un rango de Actualmente se cuenta con 4 puntos en Fusagasugá:
-                                </p>
-                                <dl>
-                                    <dt>> <b>Wi-Fi El Progreso.</b></dt>
-                                    <dd>
-                                        <address>Calle 3B No. 6-13, Barrio Progreso.</address>
-                                    </dd>
-                                    <dt>> <b>Wi-Fi Plaza de mercado.</b></dt>
-                                    <dd>
-                                        <address>Avenida Las Palmas entre carreras 11 y 12 con calle 7a, Barrio Luxemburgo.</address>
-                                    </dd>
-                                    <dt>> <b>Wi-Fi Eben Ezer.</b></dt>
-                                    <dd>
-                                        <address>Manzana J etapa 3, Barrio Ciudad Eben Ezer.</address>
-                                    </dd>
-                                    <dt>> <b>Wi-Fi Parque Principal Alcaldía.</b></dt>
-                                    <dd>
-                                        <address>Calle 6 No. 6-24 Barrio Centro.</address>
-                                    </dd>
-                                    <dt>> <b>Wi-Fi Barrio Coburgo.</b></dt>
-                                    <dd>
-                                        <address>Parque Barrio Coburgo</address>
-                                    </dd>
-                                    <dt>> <b>Wi-Fi Estadio Municipal.</b>
-                                    <dt>
-                                    <dd>
-                                        <address>Estadio Municipal Fernando Mazuera Villegas, Carrera 6 entre calles 16ª Y 17 Barrio Balmoral . </address>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#"><i class="sprite-comunications sprite-add"></i>Puntos Vive Digital</a>
-                            <div class="st-content">
-                                <p>
-                                    Los puntos vive digital o PVD tienen como objetivo garantizar la infraestructura necesaria para que
-                                    los usuarios accedan a las TIC, capacitarse en contenidos virtuales, tener alternativas sanas de
-                                    entretenimiento y participar en la multiplicación de estos conocimientos mediante la creación de
-                                    comunidades virtuales e implementando procesos de inclusión y alfabetización digital para disminuir
-                                    la brecha digital.
-                                </p>
-                                <p>
-                                    Actualmente Fusagasugá cuenta con (4) Puntos Vive Digital, ubicados en:
-                                </p>
-                                <b>P.V.D. Biblioteca</b>
-                                <div class="centrar margen">
-                                    <address>Transversal 9 No. 1491 Piso 1 y2.</address>
-                                    <a href="#pvd-biblioteca" data-rel="popup" data-position-to="window" data-transition="fade">
-                                        <img class="popphoto" src="images/pvd-biblioteca.jpg" style="max-width:100px;">
-                                    </a>
-                                    <div data-role="popup" id="pvd-biblioteca" data-overlay-theme="b" data-theme="b" data-corners="false">
-                                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                                        <img class="popphoto" src="images/pvd-biblioteca.jpg" style="min-width:300px;">
-                                    </div>
-                                </div>
-                                <b>P.V.D. El Progreso</b>
-                                <div class="centrar margen">
-                                    <address>Calle 3B No. 6-13, Barrio Progreso</address>
-                                    <a href="#pvd-progreso" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/pvd-progreso.jpg" style="max-width:100px;"></a>
-                                    <div data-role="popup" id="pvd-progreso" data-overlay-theme="b" data-theme="b" data-corners="false">
-                                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                                        <img class="popphoto" src="images/pvd-progreso.jpg" style="min-width:300px;">
-                                    </div>
-                                </div>
-                                <b>P.V.D. Llano verde</b>
-                                <div class="centrar margen">
-                                    <address>Carrera 68 con Calle 18 esquina, Barrio Llano Verde. UEM. Henando cardenas </address>
-                                    <a href="#pvd-llano-verde" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/pvd-llano-verde.jpg" style="max-width:100px;"></a>
-                                    <div data-role="popup" id="pvd-llano-verde" data-overlay-theme="b" data-theme="b" data-corners="false">
-                                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                                        <img class="popphoto" src="images/pvd-llano-verde.jpg" style="min-width:300px;">
-                                    </div>
-                                </div>
-                                <b>P.V.D. Plus</b>
-                                <div class="centrar margen">
-                                    <address>Calle 1 No. 14B-20, Barrio Gaitán II Etapa, IEM. Manuel Humberto Cárdenas Vélez</address>
-                                    <a href="#pvd-plus" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/pvd-plus.jpg" style="max-width:100px;"></a>
-                                    <div data-role="popup" id="pvd-plus" data-overlay-theme="b" data-theme="b" data-corners="false">
-                                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-                                        <img class="popphoto" src="images/pvd-plus.jpg" style="min-width:300px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+    
+        <div role="main" class="ui-content">
+        	<div data-form="ui-body-a">
+	            contenido de 
+            </div>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#dos" title="vista dos">Vista número dos</a></li>
+                <li><a href="#tres" title="vista tres">Vista número tres</a></li>
+                <li><a href="#cuatro" title="vista cuatro">Vista número cuadro</a></li>
+                <li><a href="#cinco" title="vista cinco">Vista número cinco</a></li>
+            </ul>
         </div>
-
-        <!--Educación Digital
-        ********************************************** -->
-        <div data-role="page" id="educacion">
-            <header data-role="header" data-fullscreen="true" class="ui-bar-inherit-personal" id="header-educacion">
-                <a href="#principal" data-transition="flip" data-role="none">
-                    <img src="images/LogoSimbolo.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-top">
-                </a>
-                <a href="#nav-educacion" class="ui-btn-right ui-link ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menú</a>
-
-                <div data-role="panel" id="nav-educacion" data-position="right" data-display="overlay" class="menu-content">
-                    <div class="ui-grid-solo">
-                        <div class="ui-block-a"><a href="#principal"> <img src="images/btn/btn-home.png" /><br /> <small>Inicio</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#gobierno-en-linea"> <img src="images/btn/btn-gel.png" /><br /> <small>Gobierno en Línea</small></a></div>
-                        <div class="ui-block-b"><a href="#educacion"> <img src="images/btn/btn-educacion.png" /><br /> <small>Educación Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#economico"> <img src="images/btn/btn-economico.png" /><br /><small>Desarrollo Económico</small></a></div>
-                        <div class="ui-block-b"><a href="#turismo"> <img src="images/btn/btn-turismo.png" /><br /><small>Turismo y Cultura Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#creditos"> <img src="images/btn/btn-creditos.png" /><br /><small>Creditos</small></a></div>
-                        <div class="ui-block-b"><a href="#header-educacion" data-rel="close"> <img src="images/btn/btn-close.png" /><br /><small>Cerrar</small></a></div>
-                    </div>
-                </div>
-            </header>
-            <section role="main" class="ui-content">
-                <div class="title">
-                    <a href="#gobierno-en-linea" class="sprite-primary sprite-prev" data-rel="back"></a>
-                    <span>
-                        <img src="images/btn/btn-educacion.png" alt="educación">
-                        Educación Digital
-                    </span>
-                    <a href="#economico" class="sprite-primary sprite-next" data-transition="slide"></a>
-                </div>
-                <!--<div class="right prev-gobierno"></div>
-                <div class="left next-economico"></div>-->
-                <hr>
-                <div class="fondo-educacion">
-                    <p>
-                        La Educación Digital pretende proveer de nuevas herramientas tecnológicas a las instituciones educativas de la ciudad de Fusagasugá,
-                        y alrededores facilitando la incursión a los nuevos sistemas educativos en las aulas.
-                    </p>
-                    <hr />
-                    <p>
-                        Si esta interesado en algún colegio público de Fusagasugá, ponemos a su disposición el directorio educativo las Instituciones
-                        Educativas Municipales (IEM) del municipio de Fusagasugá:
-                    </p>
-                    <form>
-                        <input data-type="search" id="buscarIEM" placeholder="buscar colegio o rector">
-                    </form>
-                    <div data-role="collapsibleset" data-filter="true" data-children="> div, > div div ul li" data-inset="true" id="collapsiblesetForFilterChildren" data-input="#buscarIEM">
-                        <div data-role="collapsible" data-filtertext="Luz Mery Sanchez Centro Educativo Municipal Escuela de Patrulleritos del Sumapaz">
-                            <h3>Escuela de Patrulleritos del Sumapaz</h3>
-                            <p><strong>Nombre:</strong> Centro Educativo Municipal Escuela de Patrulleritos del Sumapaz</p>
-                            <p><strong>Rector(a):</strong> Luz Mery Sanchez</p>
-                            <p><strong>Dirección:</strong> Calle 19 Nº 50-24</p>
-                            <p><strong>Teléfono:</strong> 314 240 88 97</p>
-                            <p><strong>E-mail:</strong>Marluz7777@hotmail.com - maryhean1224@hotmail.com</p>
-                            <p><strong>Sedes: </strong>Ninguna</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Zulma Rocio Briseño Centro Educativo Municipal Escuela Santiago Samper Brush">
-                            <h3>Escuela Santiago Samper Brush</h3>
-                            <p><strong>Nombre:</strong> Centro Educativo Municipal Escuela Santiago Samper Brush</p>
-                            <p><strong>Rector(a):</strong> Zulma Rocio Briseño</p>
-                            <p><strong>Dirección:</strong> Km 83 Via Panamericana</p>
-                            <p><strong>Teléfono:</strong> 8720251 - 3132691824</p>
-                            <p><strong>E-mail:</strong> zulmarocio14@yahoo.es - lcubilloshi@yahoo.es</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Lilia Celina Barrera Ramirez Centro Educativo Municipal Instituto de Promoción Social">
-                            <h3>Instituto de Promoción Social</h3>
-                            <p><strong>Nombre:</strong> Centro Educativo Municipal Instituto de Promoción Social</p>
-                            <p><strong>Rector(a):</strong> Lilia Celina Barrera Ramirez</p>
-                            <p><strong>Dirección:</strong> Barrio La Venta</p>
-                            <p><strong>Teléfono:</strong> 867 07 80</p>
-                            <p><strong>E-mail:</strong> instpromocionsocial@hotmail.com</p>
-                            <p><strong>Sedes: </strong>Ninguna</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Ruben Dario Jaramillo IEM Instituto Tecnico Agricola Valsalice">
-                            <h3>Instituto Tecnico Agricola Valsalice</h3>
-                            <p><strong>Nombre:</strong><dfn title="Institución Educativa Municipal">I.E.M.</dfn> Instituto Tecnico Agricola Valsalice</p>
-                            <p><strong>Rector(a):</strong> Ruben Dario Jaramillo</p>
-                            <p><strong>Dirección:</strong> Via Bogotá- Fusa Km 47</p>
-                            <p><strong>Teléfono:</strong> 310 345 55 84	</p>
-                            <p><strong>E-mail:</strong> rosupa_28@hotmail.com - dariosdb7@yahoo.com</p>
-                            <p><strong>Sedes: </strong>Casa de Lata, Cucharal Alto, La Cascada, Viena, Bosachoque.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Luis Antonio Moreno Pinzon IEM Carlos lozano y Lozano">
-                            <h3>Carlos lozano y Lozano</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Carlos lozano y Lozano</p>
-                            <p><strong>Rector(a):</strong> Luis Antonio Moreno Pinzón</p>
-                            <p><strong>Dirección:</strong> Transv.12 No 16 Bis-56</p>
-                            <p><strong>Teléfono:</strong> 8730813-8673616</p>
-                            <p><strong>E-mail:</strong> colozano@latinmail.com - Lamp_444@hotmail.com</p>
-                            <p><strong>Sedes: </strong>La Tulipana, Jardín Infantil, Potosi.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Augusto Cruz Nieto IEM Eben Ezer">
-                            <h3>I.E.M Eben Ezer</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Eben Ezer</p>
-                            <p><strong>Rector(a):</strong> Augusto Cruz Nieto</p>
-                            <p><strong>Dirección:</strong> Mz. J. Tercera Etapa Eben Ezer</p>
-                            <p><strong>Teléfono:</strong> 867 0261	</p>
-                            <p><strong>E-mail:</strong> - </p>
-                            <p><strong>Sedes: </strong>Infantil, Hernando Cardenas, Jaime Garzón.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Julio Enrique Talero Espejo Francisco José de Caldas">
-                            <h3>Francisco José de Caldas</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn>  Francisco José de Caldas</p>
-                            <p><strong>Rector(a):</strong> Julio Enrique Talero Espejo</p>
-                            <p><strong>Dirección:</strong> La Aguadita</p>
-                            <p><strong>Teléfono:</strong> 8673187 - 8678895 - 3124344771</p>
-                            <p><strong>E-mail:</strong> colegiocaldas@gmail.com - julotalero@yahoo.</p>
-                            <p><strong>Sedes: </strong>Bermejal, Piamonte, Tierra Negra, Usathama, San José de Piamonte.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Guillermo Rodriguez Forero IEM Guavio Bajo Mesitas Batan Bochica El Carmen Trinidad Consuelo Palacios">
-                            <h3>I.E.M Guavio Bajo</h3>
-                            <p><strong>Nombre:</strong>  <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Guavio Bajo</p>
-                            <p><strong>Rector(a):</strong> Guillermo Rodriguez Forero</p>
-                            <p><strong>Dirección:</strong> Vereda Guavio Bajo</p>
-                            <p><strong>Teléfono:</strong> 8080608</p>
-                            <p><strong>E-mail:</strong>osomis_58@hotmail.com - rodrigo5@gmail.com</p>
-                            <p><strong>Sedes: </strong>Mesitas, Batan, Bochica, El Carmen, Guavio, Alto, La Trinidad, El Consuelo, Santa Ana, Santa Lucia, Palacios.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Instituto Tecnico Industrial Juan Ramon Ruiz Gonzalez">
-                            <h3>Instituto Tecnico Industrial</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Instituto Tecnico Industrial</p>
-                            <p><strong>Rector(a):</strong> Juan Ramon Ruiz Gonzalez</p>
-                            <p><strong>Dirección:</strong> Cra. 6A No 16-02</p>
-                            <p><strong>Teléfono:</strong> 873 0602 - 867 8450 - 867 4962</p>
-                            <p><strong>E-mail:</strong> iti@hotmail.com - jrinirida@yahoo.com	</p>
-                            <p><strong>Sedes: </strong> General Santander, Los Sauces, Bethel(No esta en Servicio).</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext=" Jose Celestino Mutis Carlos Julio Arias Manrique">
-                            <h3>Jose Celestino Mutis</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Jose Celestino Mutis</p>
-                            <p><strong>Rector(a):</strong> Carlos Julio Arias Manrique</p>
-                            <p><strong>Dirección:</strong> Carrera 1 este No 22-03	</p>
-                            <p><strong>Teléfono:</strong> 873 8120 - 873 8121</p>
-                            <p><strong>E-mail:</strong>unedmutis@hotmail.com - cajuarma107@hotmail.com</p>
-                            <p><strong>Sedes: </strong>La Macarena, Yira Castro, Fusacatan, Sardinas.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Luis Carlos Galan Sarmiento Julio Enrique Talero Espejo">
-                            <h3>Luis Carlos Galan Sarmiento</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Luis Carlos Galan Sarmiento</p>
-                            <p><strong>Rector(a):</strong> Julio Enrique Talero Espejo</p>
-                            <p><strong>Dirección:</strong> Via Panamericana con Ocobos. Km 57	</p>
-                            <p><strong>Teléfono:</strong> 8679169-8679495</p>
-                            <p><strong>E-mail:</strong> uem_icg@hotmail.com - julotalero@yahoo.es</p>
-                            <p><strong>Sedes: </strong>Ninguna</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Manuel Humberto Cardenas Velez Magdalena Sanabria Sierra">
-                            <h3>Manuel Humberto Cardenas Velez</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Manuel Humberto Cardenas Velez</p>
-                            <p><strong>Rector(a):</strong> Magdalena Sanabria Sierra</p>
-                            <p><strong>Dirección:</strong> Calle 1a Norte No 14 B-20</p>
-                            <p><strong>Teléfono:</strong> 873 30 92</p>
-                            <p><strong>E-mail:</strong> Mabriss1@hotmail.com</p>
-                            <p><strong>Sedes: </strong>Julio Sabogal, Antonia Santos, Los Resguardos</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Nuevo Horizonte Luz Marina Leon Pachon">
-                            <h3>Nuevo Horizonte</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Nuevo Horizonte</p>
-                            <p><strong>Rector(a):</strong> Luz Marina Leon Pachon</p>
-                            <p><strong>Dirección:</strong> Vereda Espinalito Alto</p>
-                            <p><strong>Teléfono:</strong> 313 831 83 08</p>
-                            <p><strong>E-mail:</strong> luzmarinaleon2005@hotmail.com</p>
-                            <p><strong>Sedes: </strong>El Placer, Espinalito Bajo, Guayabal, La Isla.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Tecnica Acción Comunal Jorge Ignacio Baquero Manrique">
-                            <h3>Técnica Acción Comunal</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Técnica Acción Comunal</p>
-                            <p><strong>Rector(a):</strong> Jorge Ignacio Baquero Manrique</p>
-                            <p><strong>Dirección:</strong> Cra 1a No. 8-08 Norte</p>
-                            <p><strong>Teléfono:</strong>8675379-8722091</p>
-                            <p><strong>E-mail:</strong> uetm.accioncomunal@hotmail.com - Joibam1@gmail.com</p>
-                            <p><strong>Sedes: </strong>El Lucero, Gustavo Vega Escobar, Manuela Beltran, Jordan Alto, Jordan Bajo.</p>
-                        </div>
-                        <div data-role="collapsible" data-filtertext="Teodoro Aya Villaveces Gustavo Laverde Niño">
-                            <h3>Teodoro Aya Villaveces</h3>
-                            <p><strong>Nombre:</strong> <dfn title="Institución Educativa Municipal">I.E.M.</dfn> Teodoro Aya Villaveces</p>
-                            <p><strong>Director(a):</strong> Gustavo Laverde Niño</p>
-                            <p><strong>Dirección:</strong> Cra. 6 Calle 16.</p>
-                            <p><strong>Teléfono:</strong> 886 47 20</p>
-                            <p><strong>E-mail:</strong> gulan_7@yahoo.es</p>
-                            <p><strong>Sedes: </strong>Camilo Torres</p>
-                        </div>
-                    </div>
-                    <hr>
-                    <p>
-                        Como muestra de esta iniciativa, en el portal <a href="http://fusagasugadigital.gov.co/DEducacion" target="_blank">Fusagasugá Digital</a>
-                        podrá encontrar materiales (educativos de español, matemáticas y ciencias) para ser entretenidas las clases. (disponible solo para equipos
-                        de escritorio)
-                    </p>
-                </div>
-            </section>
-        </div>
-
-        <!--Desarrollo Econímico Digital
-        ********************************************** -->
-        <div data-role="page" id="economico">
-            <header data-role="header" data-fullscreen="true" class="ui-bar-inherit-personal" id="header-economico">
-                <a href="#principal" data-transition="flip" data-role="none">
-                    <img src="images/LogoSimbolo.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-top">
-                </a>
-                <a href="#nav-economico" class="ui-btn-right ui-link ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menú</a>
-
-                <div data-role="panel" id="nav-economico" data-position="right" data-display="overlay" class="menu-content">
-                    <div class="ui-grid-solo">
-                        <div class="ui-block-a"><a href="#principal"> <img src="images/btn/btn-home.png" /><br /> <small>Inicio</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#gobierno-en-linea"> <img src="images/btn/btn-gel.png" /><br /> <small>Gobierno en Línea</small></a></div>
-                        <div class="ui-block-b"><a href="#educacion"> <img src="images/btn/btn-educacion.png" /><br /> <small>Educación Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#economico"> <img src="images/btn/btn-economico.png" /><br /><small>Desarrollo Económico</small></a></div>
-                        <div class="ui-block-b"><a href="#turismo"> <img src="images/btn/btn-turismo.png" /><br /><small>Turismo y Cultura Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#creditos"> <img src="images/btn/btn-creditos.png" /><br /><small>Creditos</small></a></div>
-                        <div class="ui-block-b"><a href="#header-economico" data-rel="close"> <img src="images/btn/btn-close.png" /><br /><small>Cerrar</small></a></div>
-                    </div>
-                </div>
-            </header>
-            <section role="main" class="ui-content">
-                <div class="title">
-                    <a href="#educacion" class="sprite-primary sprite-prev" data-rel="back"></a>
-                    <span>
-                        <img src="images/btn/btn-economico.png" alt="educación">
-                        Desarrollo Económico
-                    </span>
-                    <a href="#turismo" class="sprite-primary sprite-next" data-transition="slide"></a>
-                </div>
-                <hr>
-                <!--<div class="right prev-educacion"></div>
-                <div class="left next-turismo"></div>-->
-                <p>
-                    La Alcaldía de Fusagasugá por medio de la oficina de las TICs quieren convertir el uso de Internet en un
-                    aliado estratégico para los microempresarios del municipio, para ello se diseño y elaboró un espacio en
-                    el cual, el micoempresario podrá ofertar sus productos y servicios de manera gratuita.
-                </p>
-                <p>
-                    Lo único que debe hacer es acercarce a la oficina TICs de la Alcaldía de Fusagasugá con lo siguiente:
-                </p>
-                <ol>
-                    <li>Logotipo de su microempresa.</li>
-                    <li>Imágenes de sus productos y/o servicios.</li>
-                    <li>Listado de productos y/o servicios.</li>
-                    <li>Fotocopia en físico del RUT de su empresa actualizado</li>
-                </ol>
-                <p>
-                    Por otro lado, este regitro, fortalece la demanda de manera directa con el microempresario, capacitando y dando a
-                    conocer las ventajas que conlleva hacer uso de Internet en sus negocios. Para ello se ha creado <a href="http://www.inscripciones.learnmate.co/ciudadania/index.php/empresario-digital" target="_blank" title="Empresario digital">Empresario Digital</a> , programa de formación y certificación en competencias TIC para los microempresarios.
-                </p>
-                <h4>
-                    Visitanos y se parte del cambio
-                    <a href="http://www.fusagasugadigital.gov.co/mipymedigital/" target="_blank" title="Mi Pyme Digital">
-                        <br />
-                        <img src="images/lupa.png" style="margin-bottom:-10px" />  Mi Pyme Digital Fusagasugá
-                    </a>
-                </h4>
-            </section>
-        </div>
-
-        <!--Turismo y Cultura Digital
-        ********************************************** -->
-        <div data-role="page" id="turismo">
-            <header data-role="header" data-fullscreen="true" class="ui-bar-inherit-personal" id="header-turismo">
-                <a href="#principal" data-transition="flip" data-role="none">
-                    <img src="images/LogoSimbolo.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-top">
-                </a>
-                <a href="#nav-turismo" class="ui-btn-right ui-link ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menú</a>
-                <div data-role="panel" id="nav-turismo" data-position="right" data-display="overlay" class="menu-content">
-                    <div class="ui-grid-solo">
-                        <div class="ui-block-a"><a href="#principal"> <img src="images/btn/btn-home.png" /><br /> <small>Inicio</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#gobierno-en-linea"> <img src="images/btn/btn-gel.png" /><br /> <small>Gobierno en Línea</small></a></div>
-                        <div class="ui-block-b"><a href="#educacion"> <img src="images/btn/btn-educacion.png" /><br /> <small>Educación Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#economico"> <img src="images/btn/btn-economico.png" /><br /><small>Desarrollo Económico</small></a></div>
-                        <div class="ui-block-b"><a href="#turismo"> <img src="images/btn/btn-turismo.png" /><br /><small>Turismo y Cultura Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#creditos"> <img src="images/btn/btn-creditos.png" /><br /><small>Creditos</small></a></div>
-                        <div class="ui-block-b"><a href="#header-turismo" data-rel="close"> <img src="images/btn/btn-close.png" /><br /><small>Cerrar</small></a></div>
-                    </div>
-                </div>
-            </header>
-            <section role="main" class="ui-content">
-                <div class="title">
-                    <a href="#economico" class="sprite-primary sprite-prev" data-rel="back"></a>
-                    <span>
-                        <img src="images/btn/btn-turismo.png">
-                        Turismo y Cultura
-                    </span>
-                    <a href="#creditos" class="sprite-primary sprite-next" data-transition="slide"></a>
-                </div>
-                <hr>
-                <!--<div class="right prev-economico"></div>
-                <div class="left next-creditos"></div>-->
-
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a href="#casa-balmoral" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-                            <img src="images/turismo/casa-balmoral.jpg" class="thumballi-turismo" />
-                        </a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a href="#jardinera" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-                            <img src="images/turismo/jardinera.jpg" class="thumballi-turismo" />
-                        </a>
-                    </div>
-                </div>
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a href="#indio" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-                            <img src="images/turismo/indio.jpg" class="thumballi-turismo" />
-                        </a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a href="#cascada" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-                            <img src="images/turismo/cascada.jpg" class="thumballi-turismo" />
-                        </a>
-                    </div>
-                </div>
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a href="#casa-coburgo" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-                            <img src="images/turismo/casa-coburgo.jpg" class="thumballi-turismo" />
-                        </a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a href="#capilla" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-                            <img src="images/turismo/Capilla.jpg" class="thumballi-turismo" />
-                        </a>
-                    </div>
-                </div>
-                <div data-role="popup" id="casa-balmoral" class="ui-content">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-                    <h4 class="titulo-img">Casona de Balmoral</h4>
-                    <img src="images/turismo/casa-balmoral.jpg" class="img-turismo" />
-                </div>
-                <div data-role="popup" id="jardinera" class="ui-content">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-                    <h4 class="titulo-img">Monumento la Jardinera</h4>
-                    <img src="images/turismo/jardinera.jpg" class="img-turismo" />
-                </div>
-                <div data-role="popup" id="indio" class="ui-content">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-                    <h4 class="titulo-img">Monumento Indio Sutagao</h4>
-                    <img src="images/turismo/indio.jpg" class="img-turismo" />
-                </div>
-                <div data-role="popup" id="cascada" class="ui-content">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-                    <h4 class="titulo-img">Parque San Rafael</h4>
-                    <img src="images/turismo/cascada.jpg" class="img-turismo" />
-                </div>
-                <div data-role="popup" id="casa-coburgo" class="ui-content">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-                    <h4 class="titulo-img">Casa de Coburgo</h4>
-                    <img src="images/turismo/casa-coburgo.jpg" class="img-turismo" />
-                </div>
-                <div data-role="popup" id="capilla" class="ui-content">
-                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Cerrar</a>
-                    <h4 class="titulo-img">Capilla cementerio</h4>
-                    <img src="images/turismo/Capilla.jpg" class="img-turismo" />
-                </div>
-
-            </section>
-        </div>
-        <!--Créditos
-        ********************************************* -->
-        <div data-role="page" id="creditos">
-            <header data-role="header" data-fullscreen="true" class="ui-bar-inherit-personal" id="header-creditos">
-                <a href="#principal" data-transition="flip" data-role="none">
-                    <img src="images/LogoSimbolo.png" alt="Las TICs | Contigo Con Todo" title="Las TICs | Contigo Con Todo" class="logo-simbolo-top">
-                </a>
-                <a href="#nav-creditos" class="ui-btn-right ui-link ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menú</a>
-
-                <div data-role="panel" id="nav-creditos" data-position="right" data-display="overlay" class="menu-content">
-                    <div class="ui-grid-solo">
-                        <div class="ui-block-a"><a href="#principal"> <img src="images/btn/btn-home.png" /><br /> <small>Inicio</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#gobierno-en-linea"> <img src="images/btn/btn-gel.png" /><br /> <small>Gobierno en Línea</small></a></div>
-                        <div class="ui-block-b"><a href="#educacion"> <img src="images/btn/btn-educacion.png" /><br /> <small>Educación Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#economico"> <img src="images/btn/btn-economico.png" /><br /><small>Desarrollo Económico</small></a></div>
-                        <div class="ui-block-b"><a href="#turismo"> <img src="images/btn/btn-turismo.png" /><br /><small>Turismo y Cultura Digital</small></a></div>
-                    </div>
-                    <div class="ui-grid-a">
-                        <div class="ui-block-a"><a href="#creditos"> <img src="images/btn/btn-creditos.png" /><br /><small>Creditos</small></a></div>
-                        <div class="ui-block-b"><a href="#header-creditos" data-rel="close"> <img src="images/btn/btn-close.png" /><br /><small>Cerrar</small></a></div>
-                    </div>
-                </div>
-            </header>
-            <section role="main" class="ui-content">
-                <div class="title">
-                    <a href="#turismo" class="sprite-primary sprite-prev" data-rel="back"></a>
-                    <span>
-                        Créditos
-                    </span>
-                </div>
-                <hr>
-                <div class="cred">
-                    <p class="centrar">
-                        <b> Diseño y desarrollo</b><br />
-                        <img src="images/LogoSimbolo.png" title="Oficina TIC Fusagasugá" />
-                    </p>
-                    <p class="centrar">Ing.Jorge Borda</p>
-                    <p class="centrar">Ing. Wilmer Poveda</p>
-                    <p class="centrar">Ing.Julián Salinas</p>
-                    <hr />
-                    <p class="centrar">
-                        <img src="images/LogoSimboloF.png" title="Alcaldía de Fusagasugá" />
-                        <wbr />
-                    </p>
-                    <p class="centrar">Alcalde Carlos Daza</p>
-                    
-                    <!--<p class="centrar">
-                        <b>Fotografías turismo:</b><br />
-                        Oficina Comunicaciones Alcaldía Fusagasugá
-                    </p>-->
-                </div>
-                <br>
-                <!--<i class="sprite-primary sprite-menu sprite-icon"></i>
-                <i class="sprite-primary sprite-prev"></i>
-                <i class="sprite-primary sprite-next"></i>
-                <i class="sprite-primary sprite-close sprite-icon"></i>
-                <i class="sprite-primary sprite-arrow-left sprite-icon"></i>
-                <i class="sprite-primary sprite-arrow-right sprite-icon"></i>-->
-            </section>
+    
+        <div data-role="footer">
+            <h4>Contacto</h4>
+            <span class="ui-icon-comment">
         </div>
     </div>
 
-    <!-- Cordova reference, this is added to your app when it's built. -->
-    <!--<script src="cordova.js"></script>-->
-    <script src="scripts/platformOverrides.js"></script>
-    <script src="scripts/jquery.accordion.js"></script>
-    <script src="scripts/jquery.easing.1.3.js"></script>
-    <script type="text/javascript">
-        $(function () {
 
-            $('#st-accordion').accordion({
-                oneOpenedItem: true
-            });
+	<!-- Segunda vista-->
+<div data-role="page" id="dos">
+        <div data-role="header" data-position="fixed">
+            <h1>Tercera vista</h1> 
+            <a href="#nav-menu" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+        </div>
+    
+        <div role="main" class="ui-content">
+           	<p>
+            	Contenido de la tercera vista
+            </p>
+        </div>
+        
+        
+        <div id="nav-menu" data-role="panel" data-theme="b" data-display="overlay" >
+        <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+   		<ul data-role="listview" data-inset="true">
+        	<li><a href="#dos" class="ui-btn ui-btn-icon-right ui-icon-carat-r">Vista número dos</a></li>
+            <li><a href="#tres" title="vista tres">Vista número tres</a></li>
+            <li><a href="#cuatro" title="vista cuatro">Vista número cuadro</a></li>
+            <li><a href="#cinco" title="vista cinco">Vista número cinco</a></li>
+      	</ul>
+  </div>	
+    </div>
+    
+    <!-- Tercera vista-->
+    <div data-role="page" id="tres">
+        <div data-role="header" data-position="fixed">
+            <h1>Tercera vista</h1>
+        </div>
+    
+        <div role="main" class="ui-content">
+           	<p>
+            	Contenido de la tercera vista
+            </p>
+        </div>
+    </div>
+    
+    
+        <!-- Cuarta vista-->
+    <div data-role="page" id="cuatro">
+    
+        <div data-role="header" data-position="fixed">
+            <h1>Cuarta Vista</h1>
+        </div>
+        <div role="main" class="ui-content">
+        	<p>
+            	Contenido de la cuarta vista
+            </p>
+        </div>
+    </div>
+    
+        <!-- Quinta Vista-->
+    <div data-role="page" id="cinco">
+        <div data-role="header" data-position="fixed">
+            <h1>Quinta Vista</h1>
+        </div>
+        <div role="main" class="ui-content">
+        	<p>
+            	Contenido de la quinta vista
+            </p>
+        </div>    
+    </div>
 
-        });
-    </script>
-
-    <!--<script src="scripts/index.js"></script>-->
 </body>
 </html>
