@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+*[data-role="footer"] div{
+	background-color:#ccc
+	height:100px;
+}
+
+*[data-role="footer"] div a{
+	height: 48px;
+}
+.social{
+	background-image:url(../images/sprite_48.png);
+	background-repeat:no-repeat;
+	padding-left:48px;
+	position:absolute;
+}
+.twitter{
+	background-position: 0px 0px;
+}
+.facebook{
+	background-position: 0px -58px;
+}
