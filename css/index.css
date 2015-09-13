@@ -1,0 +1,470 @@
+﻿/*Fonts
+------------------------------------------------*/
+@font-face {
+    font-family: FiraMono-Bold;
+    src: url(../fonts/FiraMonoOT-Bold.otf);
+}
+@font-face {
+    font-family: FiraMono-Regular;
+    src: url(../fonts/FiraMonoOT-Regular.otf);
+}
+
+body{
+    font-family:  Georgia, serif;
+	/*font-family: "Arial",FiraMono-Regular;*/
+	font-size: 16px;
+}
+small, 
+p, 
+h1, h2, h3, 
+h4, h5, h6, 
+div,span {
+    font-family:  Georgia, serif;
+}
+
+p {
+    text-align:justify;
+}
+
+#gobierno-en-linea [data-role="header"],
+#educacion [data-role="header"],
+#economico [data-role="header"],
+#turismo [data-role="header"],
+#creditos [data-role="header"] {
+    margin-top:10px;
+}
+
+hr{
+	margin: 10px 0px;
+}
+
+.limpiar {
+    clear:both;
+}
+.logo-simbolo-index{
+	display: block;
+	margin: auto auto;
+	max-width: 2048px;
+	width:70%;
+}
+
+.logo-simbolo-top{
+	display: block;
+	max-height: 40px;
+	margin: auto 10px;
+}
+a[href="#principal"]{
+	display: block;
+}
+
+/*Encabezados Page Header ejes política tic
+------------------------------------------------*/
+.title{
+	height: 30px;
+	text-align: center;
+	width: 100%;
+}
+	.title .sprite-prev{
+		float: left;
+	}
+	.title .sprite-next{ 
+		float: right;
+	}
+
+	.title span img{
+		margin: 0px 15px -10px 0px;
+	}
+
+	.title span{
+		height: 40px;
+	}
+
+.centrar{
+	margin: auto;
+	text-align: center;
+}
+
+/*Navegació página principal
+------------------------------------------------*/
+#main ul{
+	list-style: none;
+	margin: 20px auto;
+	padding-left: 0px;
+	width: 280px;
+}
+	#main ul li{	
+		background-position: left;
+		background-repeat: no-repeat;
+		box-shadow: 0px 10px 15px -13px #b4b1b1;
+		height: 40px;
+		margin:15px 5px;
+	}
+	#main ul li > a{
+		background-repeat: no-repeat;
+		color: #000;
+		display: table-cell;
+		height: 40px;
+		padding-left: 45px;
+		text-decoration: none;
+		vertical-align: middle;
+	}
+
+		#main ul li:nth-child(1) a{
+			background-image: url('../images/btn/btn-gel.png');
+		}
+		#main ul li:nth-child(2) a{
+			background-image: url('../images/btn/btn-educacion.png');
+		}
+		#main ul li:nth-child(3) a{
+			background-image: url('../images/btn/btn-economico.png');
+		}
+		#main ul li:nth-child(4) a{
+			background-image: url('../images/btn/btn-turismo.png');
+		}
+
+
+
+/*Color del encabezado diferente al index
+------------------------------------------------*/
+.ui-bar-inherit-personal{
+	background-color: #fff !important;
+	border-color: #7030a0 !important;
+	border-width: 0px 0px 3px 0px !important;
+	color: #000;
+}
+
+/*Sprite iconos
+------------------------------------------------*/
+.sprite-icon{
+	height: 30px;
+	width: 30px;
+}
+/*Sprite iconos primary
+------------------------------------------*/
+.sprite-primary{
+	background-image:url('../images/icons/IconsPrimaryAction.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.sprite-menu{
+	background-position: -35px -160px;
+}
+.sprite-close{
+	background-position: -135px -160px;
+}
+.sprite-prev{
+	/*background-position: -234px -160px;*/
+	background-position: -236px -163px;
+	border-radius:100%;
+	-ms-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	box-shadow: 0px 0px 3px 2px #fff,
+				0px 0px 5px 2px #7030a0;
+	height: 25px;
+	margin-right: 0.5rem;
+	width: 25px;
+}
+.sprite-next{
+	/*background-position: -335px -160px;*/
+	background-position: -338px -163px;
+	border-radius:100%;
+	-ms-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	box-shadow: 0px 0px 3px 2px #fff,
+				0px 0px 5px 2px #7030a0;
+	height: 25px;
+	margin-right: 0.5rem;
+	width: 25px;
+}
+.sprite-arrow-left{
+	background-position: -35px -721px;
+}
+.sprite-arrow-right{
+	background-position: -134px -721px;
+}
+
+
+/*Sprite iconos comunications
+------------------------------------------*/
+.sprite-comunications{
+	background-image:url('../images/icons/IconsCommunications.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-link-out{	
+	background-position: -34px -1765px;
+	border-radius: 100%;
+	-ms-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	margin: 0px 15px -10px 0px;
+}
+.sprite-add{	
+	background-position: -37px -1869px;
+	border-radius: 100%;
+	-ms-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	height: 25px;
+	margin: 0px 15px -10px 0px;
+	width: 25px;
+}
+
+.sprite-twitter {
+    background-position: -134px -1965px;
+	border-radius: 100%;
+	-ms-border-radius: 100%;
+	-moz-border-radius: 100%;
+	-webkit-border-radius: 100%;
+	margin:0px 15px -10px 0px;
+}
+
+.link{
+	color:#7030a0 !important;
+}
+
+
+/*Menú navegación GEL
+------------------------------------------*/
+.menu{
+	list-style: none;
+	margin: 20px auto;
+	padding-left: 0px;
+	min-width: 250px;
+}
+	.menu li{	
+		background-position: left;
+		background-repeat: no-repeat;
+		box-shadow: 0px 10px 15px -13px #b4b1b1;
+		height: 40px;
+		margin:15px 5px;
+	}
+	.menu li > a{
+		color: #000;
+		display: table-cell;
+		height: 40px;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+
+.video{
+	box-shadow: 0px 20px 20px -20px #c9c9c9;
+    -moz-box-shadow: 0px 20px 20px -20px #c9c9c9;
+    -webkit-box-shadow: 0px 20px 20px -20px #c9c9c9;
+	margin-bottom: 15px;
+    max-height:150px;
+    min-height:100px;
+    padding-bottom:5px;
+}
+.link-video{
+    border:1px solid;
+    box-shadow:0px 0px 8px #000;
+    -moz-box-shadow:0px 0px 8px #000;
+    -webkit-box-shadow:0px 0px 8px #000;
+    border-radius:6px 0px 0px 6px;
+    -moz-border-radius:6px 0px 0px 6px;
+    -webkit-border-radius:6px 0px 0px 6px;
+    display:inline-block;
+    height:100px;
+    text-align:center;
+    width: 34%;
+}
+    .link-video .play {
+        background-image:url('../images/icons/Player-Play.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        height:100px;
+        position:absolute;
+        text-align:center;
+        min-height:80px;
+        width:32%;
+        z-index:100;
+    }
+    .link-video img {
+        height:100%;
+        opacity:0.8;
+    }
+.descripcion{
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: top;
+	width:60%;
+}
+	.descripcion-titulo{
+		border-bottom:3px solid #7030a0;
+		margin:0px 0px 10px 0px;
+	}
+
+
+
+/*Acordeon
+------------------------------------------------*/
+.st-accordion{
+    width:100%;
+    min-width:270px;
+    margin: 0 auto;
+}
+.st-accordion ul li{
+    height: 30px;
+    border-bottom: 1px solid #c7deef;
+    border-top:1px solid #fff;
+    overflow: hidden;
+}
+.st-accordion ul li:first-child{
+    border-top:none;
+}
+.st-accordion ul li > a{
+    /*font-family: 'Josefin Slab',Georgia, serif;*/
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 16px;
+    display: block;
+	position: relative;
+	outline:none;
+    -webkit-transition:  color 0.2s ease-in-out;
+	-moz-transition:  color 0.2s ease-in-out;
+	-o-transition:  color 0.2s ease-in-out;
+	-ms-transition:  color 0.2s ease-in-out;
+	transition:  color 0.2s ease-in-out;
+}
+.st-accordion ul li > a:hover{
+    color: #1693eb;
+}
+.st-accordion ul li.st-open > a{
+    color: #1693eb;
+}
+.st-content{
+    padding: 5px 0px 30px 0px;
+}
+.st-content p{
+    font-size:  16px;
+    line-height:  20px;
+    padding: 0px 4px 15px 4px; 
+    text-align:justify;
+}
+.st-content div img{
+    width:125px;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+
+.margen {
+    margin:10px auto;
+}
+
+/*
+    Educación
+------------------------------------------------*/
+
+.fondo-educacion {
+    background-image:url('../images/fondo-educacion.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+}
+.img-turismo {
+    width:100%;
+}
+.cred img{
+    max-width:200px;
+}
+    .cred p {
+        line-height:30px;
+    }
+
+.titulo-img {
+    border-bottom:3px solid #d9d9d9;
+}
+
+.menu-content {
+    box-shadow:0px 3px 3px #c9c9c9;
+    -moz-box-shadow:0px 3px 3px #c9c9c9;
+    -webkit-box-shadow:0px 3px 3px #c9c9c9;
+    height:150px !important;
+    text-align:center;
+    width:100% !important;
+}
+    .menu-content > div {
+        background-color:#d9d9d9;
+        padding-bottom:10px;
+    }
+    .menu-content div div {
+        background-color: #fff;
+        margin-bottom: 10px;
+        padding: 5px 0px 5px 0px;
+    }
+        .menu-content div div div a {
+            color: #000 !important;
+            text-decoration:none;
+        }
+
+/*Media Querys
+------------------------------------------------*/
+@media screen and (max-width: 320px){
+	.st-accordion ul li > a{
+		font-size:16px;
+	}
+    .thumballi-turismo {
+        min-height:90px;
+        max-height:160px;
+        width:100%;
+        max-width:120px;
+    }
+}
+
+@media (min-width: 801px) { /*730*/
+    .thumballi-turismo {
+        min-height:90px;
+        max-height:450px;
+        width:100%;
+        max-width:560px;
+    }
+}
+
+@media screen (max-width: 800px){
+    .thumballi-turismo {
+        min-height:90px;
+        max-height:160px;
+        width:100%;
+        max-width:320px;
+    }
+}
+
+@media (max-width: 480px) and (max-height:800px){
+    .thumballi-turismo {
+        min-height:110px;
+        max-height:180px;
+        width:100%;
+        max-width:110px;
+    }
+}
+@media (max-width: 800px) and (max-height:480px) {
+    .thumballi-turismo {
+        min-height:110px;
+        max-height:180px;
+        width:100%;
+        max-width:140px;
+    }
+}
+
+/*.left {
+    background-color: transparent;
+    border:none;
+    display:inline-block;
+    height:70%;
+    right:0px;
+    position:absolute;
+    width:49%;
+}
+.right {
+    background-color: transparent;
+    border:none;
+    display:inline-block;
+    height:70%;
+    position:fixed;
+    left:0px;
+    width:49%;
+}*/
