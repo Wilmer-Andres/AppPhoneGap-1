@@ -7,14 +7,14 @@
 	width:100%;
 }
 
-.main-menu li a {
+.main-menu a {
 	background-size: contain;
 	background-repeat:no-repeat;
     background-position:left center;
     padding-left: 50px;
 }
 
-.main-menu a.nth-child(1){
+.main-menu a:nth-child(1){
 	background-image: url('../images/item1.jpg');
 }
 .main-menu a:nth-child(2){
@@ -39,8 +39,7 @@
 	background-image:url(../images/sprite_48.png);
 	background-repeat:no-repeat;
 	height: 50px;
-	padding-left:48px;
-	position:absolute;
+	margin: auto;
 }
 .twitter{
 	background-position: 0px 0px;

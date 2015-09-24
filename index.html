@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/MyStyle.css" />
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    </head>
+</head>
 
 <body>
     <!-- Primera vista -->
@@ -16,86 +16,84 @@
         <div data-role="header">
             <h1>Fusagasugá Avanza</h1>
         </div>
-    
-        <div role="main" class="ui-content">
-        	<div data-form="ui-body-a">
+
+        <div role="main" class="ui-content main-menu">
+            <div data-form="ui-body-a">
                 <img src="images/mapa-fusa.jpg" id="mapa"/>
             </div>
             <br>
-            <div role="main" class="ui-content">
-                <a href="#dos" class="ui-btn">Infraestructura TI</a>
-                <a href="#tres" class="ui-btn">Tramites y Servicios</a>
-                <a href="#cuatro" class="ui-btn">Gobierno TI</a>
-                <a href="#cinco" class="ui-btn">Educación TIC</a>
-            </div>
+            <a href="#dos" class="ui-btn">Infraestructura TI</a>
+            <a href="#tres" class="ui-btn">Tramites y Servicios</a>
+            <a href="#cuatro" class="ui-btn">Gobierno TI</a>
+            <a href="#cinco" class="ui-btn">Educación TIC</a>
         </div>
         <div data-position="fixed" data-role="footer">
             <div data-role="navbar">
                 <ul>
                     <li>
-                      <a data-icon="home">Facebook</a>
-                    </li>
-                    <li>
-                      <a data-icon="star">Twitter</a>
-                    </li>
-                </ul>
+                      <a href="https://twitter.com/anamilepb" target="_blank"><i class="social twitter"></i></a>
+                  </li>
+                  <li>
+                      <a href="https://www.facebook.com/anamilena.pulidobarreto" target="_blank"><i class="social facebook"></i></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- Segunda vista-->
+  <div data-role="page" id="dos">
+    <div data-role="header" data-position="fixed">
+        <h1>Infraestructura TI</h1> 
+        <a href="#nav-menu" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+    </div>
+    
+    <div role="main" class="ui-content">
+        <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+            <div data-role="collapsible">
+                <h3>Zonas WiFi</h3>
+                <p>
+                    La Administración Municipal a través de la Oficina TIC implemento en el año 2014 seis (6) zonas Wifi,  dotadas de infraestructura para proporcionar servicio de Internet gratuito en espacios abiertos; zonas Wifi, ubicadas en:
+                </p>
+                <p>
+                    <b>Zona Wifi Contigo Con Todo El Progreso</b>, Comuna Norte – Puesto de Salud del Barrio el Progreso
+                </p><br>
+                <p>
+                    <b>Zona Wifi Contigo Con Todo Plaza de Mercado</b>, Comuna Centro – Avenida las Palmas entre carrera 11 y 12 Barrio Luxemburgo.
+                </p><br>
+                <p>
+                    <b>Zona Wifi Contigo Con Todo Eben Ezer</b>, Comuna Suroccidental - Manzana J etapa 3, Barrio Ciudad Eben Ezer
+                </p><br>
+                <p>
+                    <b>Zona Wifi Contigo Con Todo Parque Principal</b>, Comuna Centro - Calle 6 No. 6-24 Barrio Centro
+                </p><br>
+                <p>
+                    <b>Zona Wifi Contigo Con Todo Coburgo</b>, Comuna Oriental - Parque Barrio Coburgo.
+                </p><br>
+                <p>
+                    <b>Zona Wifi Contigo Con Todo Estadio Municipal</b>, Comuna Suroriental - Estadio Municipal Fernando Mazuera Villegas, Carrera 6 entre calles 16ª Y 17 Barrio Balmoral
+                </p><br>
+                Conoce más acerca de las<a href="http://www.fusagasugadigital.gov.co/DGobierno/zonas-wifi" taget="_blank">Zonas WiFi</a>
             </div>
+
+            <div data-role="collapsible">
+                <h3>Puntos Vive Digital (PVD)</h3>
+                <p>
+                    El Municipio de Fusagasugá cuenta con cuatro (4) Puntos Vive Digital, sitios dotados de infraestructura técnica (bienes comprendidos en equipos tanto en hardware como en software, señalización, cableado estructurado y mobiliario), para que los usuarios accedan de manera GRATUITA a las TIC, capacitarse en contenidos virtuales, tener alternativas sanas de entretenimiento y participar en la multiplicación de estos conocimientos mediante la creación de comunidades virtuales e implementando procesos de inclusión y alfabetización digital para disminuir la brecha digital. En cada Punto encuentran un sin número de ofertas para inscripción en la diversidad de cursos de manera continua. Algunos de estos cursos se encuentran en convenio con el SENA.
+                </p>
+                <br>
+                <p><b>PVD Fase 0, Biblioteca</b>  - Transversal 9 No. 14-91 Piso 1 y 2</p> <br>
+                <p><b>PVD Fase 0, Llano Largo - </b>Carrera 68 con calle 18 esquina, Barrio Llano Largo, Unidad Educativa Municipal Hernando Cárdenas</p> <br>
+                <p><b>PVD Fase 1, El Progreso  - </b>Calle 3B No. 6-13, Barrio El Progreso</p> <br>
+                <p><b>PVD Plus - </b>Calle 1 No. 14B-20, Barrio Gaitán II Etapa, Institución Educativa Municipal Manuel Humberto Cárdenas Vélez</p> <br>
+                <br>
+                Conoce más acerca de los<a href="http://www.fusagasugadigital.gov.co/DGobierno/pvd " taget="_blank">Puntos Vive Digital</a> de Fusagasugá.
+            </div>
+            
         </div>
     </div>
-
-
-	<!-- Segunda vista-->
-	<div data-role="page" id="dos">
-        <div data-role="header" data-position="fixed">
-            <h1>Infraestructura TI</h1> 
-            <a href="#nav-menu" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-        </div>
-    
-        <div role="main" class="ui-content">
-           	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-                <div data-role="collapsible">
-                    <h3>Zonas WiFi</h3>
-                    <p>
-                        La Administración Municipal a través de la Oficina TIC implemento en el año 2014 seis (6) zonas Wifi,  dotadas de infraestructura para proporcionar servicio de Internet gratuito en espacios abiertos; zonas Wifi, ubicadas en:
-                    </p>
-                    <p>
-                        <b>Zona Wifi Contigo Con Todo El Progreso</b>, Comuna Norte – Puesto de Salud del Barrio el Progreso
-                    </p><br>
-                    <p>
-                        <b>Zona Wifi Contigo Con Todo Plaza de Mercado</b>, Comuna Centro – Avenida las Palmas entre carrera 11 y 12 Barrio Luxemburgo.
-                    </p><br>
-                    <p>
-                        <b>Zona Wifi Contigo Con Todo Eben Ezer</b>, Comuna Suroccidental - Manzana J etapa 3, Barrio Ciudad Eben Ezer
-                    </p><br>
-                    <p>
-                        <b>Zona Wifi Contigo Con Todo Parque Principal</b>, Comuna Centro - Calle 6 No. 6-24 Barrio Centro
-                    </p><br>
-                    <p>
-                        <b>Zona Wifi Contigo Con Todo Coburgo</b>, Comuna Oriental - Parque Barrio Coburgo.
-                    </p><br>
-                    <p>
-                        <b>Zona Wifi Contigo Con Todo Estadio Municipal</b>, Comuna Suroriental - Estadio Municipal Fernando Mazuera Villegas, Carrera 6 entre calles 16ª Y 17 Barrio Balmoral
-                    </p><br>
-                    Conoce más acerca de las<a href="http://www.fusagasugadigital.gov.co/DGobierno/zonas-wifi" taget="_blank">Zonas WiFi</a>
-                </div>
-
-                <div data-role="collapsible">
-                    <h3>Puntos Vive Digital (PVD)</h3>
-                    <p>
-                        El Municipio de Fusagasugá cuenta con cuatro (4) Puntos Vive Digital, sitios dotados de infraestructura técnica (bienes comprendidos en equipos tanto en hardware como en software, señalización, cableado estructurado y mobiliario), para que los usuarios accedan de manera GRATUITA a las TIC, capacitarse en contenidos virtuales, tener alternativas sanas de entretenimiento y participar en la multiplicación de estos conocimientos mediante la creación de comunidades virtuales e implementando procesos de inclusión y alfabetización digital para disminuir la brecha digital. En cada Punto encuentran un sin número de ofertas para inscripción en la diversidad de cursos de manera continua. Algunos de estos cursos se encuentran en convenio con el SENA.
-                    </p>
-                    <br>
-                        <p><b>PVD Fase 0, Biblioteca</b>  - Transversal 9 No. 14-91 Piso 1 y 2</p> <br>
-                        <p><b>PVD Fase 0, Llano Largo - </b>Carrera 68 con calle 18 esquina, Barrio Llano Largo, Unidad Educativa Municipal Hernando Cárdenas</p> <br>
-                        <p><b>PVD Fase 1, El Progreso  - </b>Calle 3B No. 6-13, Barrio El Progreso</p> <br>
-                        <p><b>PVD Plus - </b>Calle 1 No. 14B-20, Barrio Gaitán II Etapa, Institución Educativa Municipal Manuel Humberto Cárdenas Vélez</p> <br>
-                    <br>
-                    Conoce más acerca de los<a href="http://www.fusagasugadigital.gov.co/DGobierno/pvd " taget="_blank">Puntos Vive Digital</a> de Fusagasugá.
-                </div>
-            
-            </div>
-        </div>
-        <div id="nav-menu" data-role="panel" data-theme="b" data-display="overlay" >
+    <div id="nav-menu" data-role="panel" data-theme="b" data-display="overlay" >
         <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
         <ul data-role="listview" data-inset="true">
             <li><a href="#uno">Inicio</a></li>
@@ -103,124 +101,125 @@
             <li><a href="#cuatro">Gobierno de TI</a></li>
             <li><a href="#cinco">Educación TIC</a></li>
         </ul>
-      </div> 
-    </div>
-        
-      
+    </div> 
+</div>
+
+
+</div>
+
+<!-- Tercera vista-->
+<div data-role="page" id="tres">
+    <div data-role="header" data-position="fixed">
+        <h1>Trámites y Servicios</h1>
+        <a href="#nav-menu2" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
     </div>
     
-    <!-- Tercera vista-->
-    <div data-role="page" id="tres">
-        <div data-role="header" data-position="fixed">
-            <h1>Trámites y Servicios</h1>
-			<a href="#nav-menu2" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-        </div>
-    
-        <div role="main" class="ui-content">
-           	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-                <p>
-                    La Alcaldía de Fusagasugá dando cumplimiento a la ley 962 de 2005, tiene aprobado por el Departamento Administrativo de la Función Pública (DAFP) setenta y cuatro (74) trámites y servicios, los cuales se encuentran publicados en el Sistema Único de Información de Tramites (SUIT). Puedes ver los trámites y servicios en el siguiente enlace.
-                </p>
-                Estos tramites estan disopnibles en el<a href="http://www.fusagasuga-cundinamarca.gov.co/publicaciones.php?id=42850">portal web de la Administración municipal</a>
-                <p>
-                    De igual manera, el municipio de Fusagasugá ha desarrollado por medio de la Oficina TIC una serie de plataformas por medio de las cuales la comunidd podrá beneficiarce en diferentes formas, según la necesidad.
-                </p>
-                <p>Las plataformas son:</p>
-                <div data-role="collapsible">
-                    <h3>Datos Abiertos</h3>
-                    <p>En cumplimiento a la Ley de Transparencia y Acceso a la Información Público, Ley 1712 de 2014, la Alcaldía de Fusagasugá a través de la Oficina TIC desarrolló Datos Abiertos, con el fin de garantizar el derecho de acceso a la información pública por parte de la ciudadanía. Visita la</p> <a href="http://datos.fusagasugadigital.gov.co/" target="_blank">página</a>
-                </div>
-                <div data-role="collapsible">
-                    <h3>TyS Online</h3>
-                    <p>La Alcaldía de Fusagasugá a través de la Oficina TIC ha desarrollado Tramites y Servicios en línea (TyS Online) es una plataforma web que permite a los ciudadanos de Fusagasugá realizar los trámites y servicios más comunes de la Alcaldía, mejorando la calidad de vida de la comunidad, evitando desplazamientos a la administración municipal mediante acceso a información (formatos, requisitos, otros) optimizando los procesos que ejecutan los funcionarios. Visita la</p> <a href="http://tics.fusagasugadigital.gov.co/TySOnline/" taget="_target">plataforma web</a>
-                </div>
-                <div data-role="collapsible">
-                    <h3>Observatorio TIC</h3>
-                    <p>El observatorio TIC es un espacio en el cual la ciudadanía en general puede indagar el impacto social que tienen los avances en temas TIC que el municipio de Fusagasugá a través de la Oficina TIC ha realizado desde su creación</p> 
-                    <p>Conoce las estadisticas de cnectividad del municipio de Fusagasugá por medio del siguiente</p> <a href="http://fusagasugadigital.gov.co/DGobierno/Observatorio-TIC" taget="_blank"> enlace</a>
-                </div>
+    <div role="main" class="ui-content">
+        <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+            <p>
+                La Alcaldía de Fusagasugá dando cumplimiento a la ley 962 de 2005, tiene aprobado por el Departamento Administrativo de la Función Pública (DAFP) setenta y cuatro (74) trámites y servicios, los cuales se encuentran publicados en el Sistema Único de Información de Tramites (SUIT). Puedes ver los trámites y servicios en el siguiente enlace.
+            </p>
+            Estos tramites estan disopnibles en el<a href="http://www.fusagasuga-cundinamarca.gov.co/publicaciones.php?id=42850">portal web de la Administración municipal</a>
+            <p>
+                De igual manera, el municipio de Fusagasugá ha desarrollado por medio de la Oficina TIC una serie de plataformas por medio de las cuales la comunidd podrá beneficiarce en diferentes formas, según la necesidad.
+            </p>
+            <p>Las plataformas son:</p>
+            <div data-role="collapsible">
+                <h3>Datos Abiertos</h3>
+                <p>En cumplimiento a la Ley de Transparencia y Acceso a la Información Público, Ley 1712 de 2014, la Alcaldía de Fusagasugá a través de la Oficina TIC desarrolló Datos Abiertos, con el fin de garantizar el derecho de acceso a la información pública por parte de la ciudadanía. Visita la</p> <a href="http://datos.fusagasugadigital.gov.co/" target="_blank">página</a>
+            </div>
+            <div data-role="collapsible">
+                <h3>TyS Online</h3>
+                <p>La Alcaldía de Fusagasugá a través de la Oficina TIC ha desarrollado Tramites y Servicios en línea (TyS Online) es una plataforma web que permite a los ciudadanos de Fusagasugá realizar los trámites y servicios más comunes de la Alcaldía, mejorando la calidad de vida de la comunidad, evitando desplazamientos a la administración municipal mediante acceso a información (formatos, requisitos, otros) optimizando los procesos que ejecutan los funcionarios. Visita la</p> <a href="http://tics.fusagasugadigital.gov.co/TySOnline/" taget="_target">plataforma web</a>
+            </div>
+            <div data-role="collapsible">
+                <h3>Observatorio TIC</h3>
+                <p>El observatorio TIC es un espacio en el cual la ciudadanía en general puede indagar el impacto social que tienen los avances en temas TIC que el municipio de Fusagasugá a través de la Oficina TIC ha realizado desde su creación</p> 
+                <p>Conoce las estadisticas de cnectividad del municipio de Fusagasugá por medio del siguiente</p> <a href="http://fusagasugadigital.gov.co/DGobierno/Observatorio-TIC" taget="_blank"> enlace</a>
             </div>
         </div>
-		<div id="nav-menu2" data-role="panel" data-theme="b" data-display="overlay" >
-            <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#uno">Inicio</a></li>
-                <li><a href="#dos">Infraestructura TI</a></li>
-                <li><a href="#cuatro">Gobierno de TI</a></li>
-                <li><a href="#cinco">Educación TIC</a></li>
-            </ul>
-		</div>
     </div>
-    
-    
-        <!-- Cuarta vista-->
-    <div data-role="page" id="cuatro">
-    
-        <div data-role="header" data-position="fixed">
-            <h1>Gobierno de TI</h1>
-            <a href="#nav-menu3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-        </div>
-        <div role="main" class="ui-content">
-        	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-                <div data-role="collapsible">
-                    <h3>Política TIC</h3>
-                    <p>La Alcaldía de Fusagasugá mediante Acuerdo No. 044 de 2012, creo la política pública de Tecnologías de la Información y las Comunicaciones (TICS), donde la Oficina TIC viene desarrollando proyectos de innovación que permitan garantizar el cumplimiento de la misma. Conoce más de las cuatro (4) estrategias de la política en el </p> <a href="http://www.fusagasugadigital.gov.co/DGobierno/Estrategias" trget="_blank"> enlace</a> <p> basadas en el </p> <a href="http://fusagasugadigital.gov.co/descargas/acuerdoTIC.pdf ">Acuerdo No. 044 de 2012 </a>
-                </div>
-                <div data-role="collapsible">
-                    <h3>Café TIC</h3>
-                    <p>La Oficina TIC de la Alcaldía de Fusagasugá, ha generado como estrategia un café donde se invita a los funcionarios para dar a conocer temas relacionados con gobierno electrónico (e-govermment), divulgación y apropiación de la estrategia de Gobierno en Línea (GEL) en la administración municipal, para lo cual se desarrolló una actividad de trabajo colaborativo empleando el modelo Business Canvas. </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>Gobierno en Línea</h3>
-                    <p>La participación del municipio de Fusagasugá en el cumplimiento del objetivo de Gobierno En Línea, a realizado avances importantes como lo es la creación de dos portales interactivos, en los que el ciudadano podrá conocer y realizar consultas de interés particular. Uno de estos sitios es <a href="http://www.fusagasuga-cundinamarca.gov.co" taget="_blank">página oficial del municipio</a> y <a href="http://fusagasugadigital.gov.co" target="_blank">la página de la Oficina TIC.</a></p>
-                    <p>Si quieres conocer más de la estrategia de Gobierno en Línea, vé al siguiente <a href="http://estrategia.gobiernoenlinea.gov.co/623/w3-channel.html " taget="_blank">enlace</a> </p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>Arquitectura TI</h3>
-                    <p>El Marco de Referencia de MinTIC, es el principal instrumento para implementar la Arquitectura TI de Colombia y habilitar la Estrategia de Gobierno en línea. Con él se busca habilitar las estrategias de TIC para servicios, TIC para la gestión, TIC para el gobierno abierto y para la Seguridad y la privacidad. La Oficina TIC desde el año 2014 inició con el perfilamiento de TI como estrategia de inicio para <a href="http://www.mintic.gov.co/arquitecturati/630/w3-channel.html" target="_blank">implementar la Arquitectura TI</a> en la Alcaldía de Fusagasugá.</p>
-                </div>
-            </div>
-        </div>
-       	<div id="nav-menu3" data-role="panel" data-theme="b" data-display="overlay" >
-        	<a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#uno">Inicio</a></li>
-                <li><a href="#dos">Infraestructura TI</a></li>
-                <li><a href="#tres">Trámites y Servicios</a></li>
-                <li><a href="#cinco">Educación TIC</a></li>
-            </ul>
-    	</div>
+    <div id="nav-menu2" data-role="panel" data-theme="b" data-display="overlay" >
+        <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+        <ul data-role="listview" data-inset="true">
+            <li><a href="#uno">Inicio</a></li>
+            <li><a href="#dos">Infraestructura TI</a></li>
+            <li><a href="#cuatro">Gobierno de TI</a></li>
+            <li><a href="#cinco">Educación TIC</a></li>
+        </ul>
     </div>
-    
-        <!-- Quinta Vista-->
-    <div data-role="page" id="cinco">
-        <div data-role="header" data-position="fixed">
-            <h1>Educación TIC</h1>
-            <a href="#nav-menu4" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
-        </div>
-        <div role="main" class="ui-content">
-        	<div data-role="collapsibleset" data-theme="a" data-content-theme="a">
-                <div data-role="collapsible">
-                    <h3>EduTIC 1</h3>
-                    <p>La Oficina TIC de la Alcaldía de Fusagasugá desarrollo la plataforma de EduTic, que tiene como objetivo utilizar la Tecnologías de la Información y Comunicaciones proporcionando a la comunidad educativa una herramienta que permite a los docentes y estudiantes apoyar el desarrollo de las actividades académicas. En la actualidad cuenta con dos (2) Ingenieros en temas de apropiación e implementación en cada Institución Educativa Municipal de la plataforma Edutic.</p>
-                    <p>Actualmente la plataforma se encuentra en funcionamiento en uno de las Instituciones Educativas Municipales y es accesible mediante el siguiente <a href="http://www.fusagasugadigital.gov.co/DEducacion/moodle-edutic" taget="_blank">enlace</a></p>
-                </div>
-                <div data-role="collapsible">
-                    <h3>Recursos Digitales</h3>
-                    <p>Tiene como objetivo utilizar la Tecnologías de la Información y Comunicaciones proporcionando a la comunidad educativa con aproximadamente 59.690 recursos digitales que pueden ser utilizados en Tablet, equipos de cómputo y otros equipos, para facilitar los procesos de aprendizaje.</p>
-                </div>
-                <p>Que esperar para ser parte de la innovación educativa, ingresa y usa los <a href="http://www.fusagasugadigital.gov.co/DEducacion/" target="_blank">recursos digitales</a></p>
-            </div>
-        </div>
-      	<div id="nav-menu4" data-role="panel" data-theme="b" data-display="overlay" >
-        	<a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#uno">Inicio</a></li>
-                <li><a href="#dos">Infraestructura TI</a></li>
-                <li><a href="#tres">Trámites y Servicios</a></li>
-                <li><a href="#cuatro">Gobierno de TI</a></li>
-            </ul>
-    	</div>
+</div>
+
+
+<!-- Cuarta vista-->
+<div data-role="page" id="cuatro">
+
+    <div data-role="header" data-position="fixed">
+        <h1>Gobierno de TI</h1>
+        <a href="#nav-menu3" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
     </div>
-	</body>
+    <div role="main" class="ui-content">
+       <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+        <div data-role="collapsible">
+            <h3>Política TIC</h3>
+            <p>La Alcaldía de Fusagasugá mediante Acuerdo No. 044 de 2012, creo la política pública de Tecnologías de la Información y las Comunicaciones (TICS), donde la Oficina TIC viene desarrollando proyectos de innovación que permitan garantizar el cumplimiento de la misma. Conoce más de las cuatro (4) estrategias de la política en el </p> <a href="http://www.fusagasugadigital.gov.co/DGobierno/Estrategias" trget="_blank"> enlace</a> <p> basadas en el </p> <a href="http://fusagasugadigital.gov.co/descargas/acuerdoTIC.pdf ">Acuerdo No. 044 de 2012 </a>
+        </div>
+        <div data-role="collapsible">
+            <h3>Café TIC</h3>
+            <p>La Oficina TIC de la Alcaldía de Fusagasugá, ha generado como estrategia un café donde se invita a los funcionarios para dar a conocer temas relacionados con gobierno electrónico (e-govermment), divulgación y apropiación de la estrategia de Gobierno en Línea (GEL) en la administración municipal, para lo cual se desarrolló una actividad de trabajo colaborativo empleando el modelo Business Canvas. </p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Gobierno en Línea</h3>
+            <p>La participación del municipio de Fusagasugá en el cumplimiento del objetivo de Gobierno En Línea, a realizado avances importantes como lo es la creación de dos portales interactivos, en los que el ciudadano podrá conocer y realizar consultas de interés particular. Uno de estos sitios es <a href="http://www.fusagasuga-cundinamarca.gov.co" taget="_blank">página oficial del municipio</a> y <a href="http://fusagasugadigital.gov.co" target="_blank">la página de la Oficina TIC.</a></p>
+            <p>Si quieres conocer más de la estrategia de Gobierno en Línea, vé al siguiente <a href="http://estrategia.gobiernoenlinea.gov.co/623/w3-channel.html " taget="_blank">enlace</a> </p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Arquitectura TI</h3>
+            <p>El Marco de Referencia de MinTIC, es el principal instrumento para implementar la Arquitectura TI de Colombia y habilitar la Estrategia de Gobierno en línea. Con él se busca habilitar las estrategias de TIC para servicios, TIC para la gestión, TIC para el gobierno abierto y para la Seguridad y la privacidad. La Oficina TIC desde el año 2014 inició con el perfilamiento de TI como estrategia de inicio para <a href="http://www.mintic.gov.co/arquitecturati/630/w3-channel.html" target="_blank">implementar la Arquitectura TI</a> en la Alcaldía de Fusagasugá.</p>
+        </div>
+    </div>
+</div>
+<div id="nav-menu3" data-role="panel" data-theme="b" data-display="overlay" >
+   <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+   <ul data-role="listview" data-inset="true">
+    <li><a href="#uno">Inicio</a></li>
+    <li><a href="#dos">Infraestructura TI</a></li>
+    <li><a href="#tres">Trámites y Servicios</a></li>
+    <li><a href="#cinco">Educación TIC</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Quinta Vista-->
+<div data-role="page" id="cinco">
+    <div data-role="header" data-position="fixed">
+        <h1>Educación TIC</h1>
+        <a href="#nav-menu4" data-icon="bars" data-iconpos="notext" class="ui-link ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-shadow ui-corner-all" data-role="button" role="button">Menu</a>
+    </div>
+    <div role="main" class="ui-content">
+       <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
+        <div data-role="collapsible">
+            <h3>EduTIC 1</h3>
+            <p>La Oficina TIC de la Alcaldía de Fusagasugá desarrollo la plataforma de EduTic, que tiene como objetivo utilizar la Tecnologías de la Información y Comunicaciones proporcionando a la comunidad educativa una herramienta que permite a los docentes y estudiantes apoyar el desarrollo de las actividades académicas. En la actualidad cuenta con dos (2) Ingenieros en temas de apropiación e implementación en cada Institución Educativa Municipal de la plataforma Edutic.</p>
+            <p>Actualmente la plataforma se encuentra en funcionamiento en uno de las Instituciones Educativas Municipales y es accesible mediante el siguiente <a href="http://www.fusagasugadigital.gov.co/DEducacion/moodle-edutic" taget="_blank">enlace</a></p>
+        </div>
+        <div data-role="collapsible">
+            <h3>Recursos Digitales</h3>
+            <p>Tiene como objetivo utilizar la Tecnologías de la Información y Comunicaciones proporcionando a la comunidad educativa con aproximadamente 59.690 recursos digitales que pueden ser utilizados en Tablet, equipos de cómputo y otros equipos, para facilitar los procesos de aprendizaje.</p>
+        </div>
+        <p>Que esperar para ser parte de la innovación educativa, ingresa y usa los <a href="http://www.fusagasugadigital.gov.co/DEducacion/" target="_blank">recursos digitales</a></p>
+    </div>
+</div>
+<div id="nav-menu4" data-role="panel" data-theme="b" data-display="overlay" >
+   <a href="#my-header" data-rel="close" class="ui-btn ui-btn-icon-right ui-icon-delete"> Cerrar</a>
+   <ul data-role="listview" data-inset="true">
+    <li><a href="#uno">Inicio</a></li>
+    <li><a href="#dos">Infraestructura TI</a></li>
+    <li><a href="#tres">Trámites y Servicios</a></li>
+    <li><a href="#cuatro">Gobierno de TI</a></li>
+</ul>
+</div>
+</div>
+</body>
 </html>
+
