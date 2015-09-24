@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+
+#mapa{
+	margin:auto;
+	max-width:393px;
+	width:100%;
+}
+
+.main-menu li a {
+	background-size: contain;
+	background-repeat:no-repeat;
+    background-position:left center;
+    padding-left: 50px;
+}
+
+.main-menu a.nth-child(1){
+	background-image: url('../images/item1.jpg');
+}
+.main-menu a:nth-child(2){
+	background-image: url('../images/item2.jpg');
+}
+.main-menu a:nth-child(3){
+	background-image: url('../images/item3.jpg');
+}
+.main-menu a:nth-child(4){
+	background-image: url('../images/item4.jpg');
+}
+
+.centrar{
+	margin: auto;
+	text-align: center;
+}
+
+.div-foo{
+	height:110px;
+}
+.social{
+	background-image:url(../images/sprite_48.png);
+	background-repeat:no-repeat;
+	height: 50px;
+	padding-left:48px;
+	position:absolute;
+}
+.twitter{
+	background-position: 0px 0px;
+}
+.facebook{
+	background-position: 0px -50px;
+}
+
+p{
+	text-align: justify;
+}
