@@ -35,9 +35,10 @@
 .social{
 	background-image:url(../images/sprite_48.png);
 	background-repeat:no-repeat;
-	height: 150px;
+	background-size: contain;
+	height: 50px;
 	margin: auto;
-	width: 150px;
+	width: 50px;
 }
 .twitter{
 	background-position: 0px 0px;
