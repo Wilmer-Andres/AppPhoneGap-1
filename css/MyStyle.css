@@ -38,6 +38,26 @@
 	background-color: #29C5F6;
 }
 
+#dos [data-role="header"]{
+	background-color:#72D054;
+	color:#fff;
+}
+
+#tres [data-role="header"]{
+	background-color:#6F5A57;
+	color:#fff;
+}
+
+#cuatro [data-role="header"]{
+	background-color:#7358F3;
+	color:#fff;
+}
+
+#cinco [data-role="header"]{
+	background-color:#FF7D7B;
+	color:#fff;
+}
+
 .social{
 	background-image:url('../images/sprite_48.png');
 	background-repeat:no-repeat;
