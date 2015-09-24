@@ -31,13 +31,32 @@
 	margin: auto;
 	text-align: center;
 }
+#grid-social li:first-child a{
+	background-color: #3B5999;
+}
+#grid-social li:last-child a{
+	background-color: #29C5F6;
+}
 
 .social{
-	background-image:url(../images/sprite_48.png);
+	background-image:url('../images/sprite_48.png');
+	background-repeat:no-repeat;
+	height: 50px;
+	width: 50px;
+	margin: auto;
+}
+.twitter{
+	background-position: 0px -50px;
+}
+.facebook{
+	background-position: 0px 0px;
+}
+
+/*.social{
+	background-image:url('../images/sprite_48.png');
 	background-repeat:no-repeat;
 	background-size: contain;
 	height: 50px;
-	margin: auto;
 	width: 50px;
 }
 .twitter{
@@ -45,7 +64,7 @@
 }
 .facebook{
 	background-position: 0px -50px;
-}
+}*/
 
 p{
 	text-align: justify;
